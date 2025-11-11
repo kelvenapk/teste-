@@ -1,56 +1,69 @@
-<!-- SVG Header com Blur -->
+<!-- Blur Header SVG -->
 <p align="center">
-  <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" height="180" xmlns="http://www.w3.org/2000/svg">
     <defs>
-      <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="8" />
+      <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="6" />
       </filter>
-      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+      <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:0.9" />
+        <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.7" />
       </linearGradient>
     </defs>
-    <rect width="100%" height="100%" fill="url(#grad)" />
-    <text x="50%" y="50%" font-size="32" fill="#00f5ff" text-anchor="middle" dominant-baseline="middle" filter="url(#blur)">
+    <rect width="100%" height="100%" fill="#0d1117" rx="20"/>
+    <text x="50%" y="50%" font-size="36" fill="url(#neonGrad)" text-anchor="middle" dominant-baseline="middle" filter="url(#softBlur)">
       kelvenapk
     </text>
-    <text x="50%" y="65%" font-size="14" fill="#c9d1d9" text-anchor="middle" dominant-baseline="middle">
-      code • design • blur
+    <text x="50%" y="70%" font-size="14" fill="#8b949e" text-anchor="middle">
+      full-stack explorer | visual junkie
     </text>
   </svg>
 </p>
 
-<!-- Divisor -->
-<img src="https://capsule-render.vercel.app/api?type=wave&color=gradient&height=60&section=footer"/>
+<!-- Divisor neon -->
+<img src="https://capsule-render.vercel.app/api?type=soft&color=timeGradient&height=60&section=footer"/>
 
-<!-- Apresentação -->
-<h2 align="center">Olá, sou Kelven 👋</h2>
+<!-- Sobre -->
+<h2 align="center">Sobre Mim</h2>
 <p align="center">
-  Explorando o front-end com estilo, blur e funcionalidade.
+  Sou desenvolvedor apaixonado por criar interfaces que <strong>funcionam</strong> e <strong>encantam</strong>.<br>
+  Explorando o limite entre design e código — com um toque de <em>blur</em>.
 </p>
 
 <!-- Redes -->
 <p align="center">
-  <a href="https://github.com/kelvenapk"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/seu-linkedin"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:seuemail@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/kelvenapk">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=00f5ff" />
+  </a>
+  <a href="https://linkedin.com/in/seu-linkedin">
+    <img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=ff00ff" />
+  </a>
+  <a href="mailto:seuemail@example.com">
+    <img src="https://img.shields.io/badge/Email-000?style=for-the-badge&logo=gmail&logoColor=ff4747" />
+  </a>
 </p>
 
 <!-- Tecnologias -->
 <h3 align="center">Tecnologias</h3>
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-000?style=for-the-badge&logo=javascript&logoColor=f7df1e" />
+  <img src="https://img.shields.io/badge/React-000?style=for-the-badge&logo=react&logoColor=61dafb" />
+  <img src="https://img.shields.io/badge/Node.js-000?style=for-the-badge&logo=node.js&logoColor=68a063" />
+  <img src="https://img.shields.io/badge/CSS3-000?style=for-the-badge&logo=css3&logoColor=1572b6" />
+  <img src="https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=f05032" />
+  <img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white" />
 </p>
 
 <!-- Stats -->
-<h3 align="center">GitHub Stats</h3>
+<h3 align="center">Stats & Atividade</h3>
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=kelvenapk&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00f5ff&text_color=c9d1d9&icon_color=00f5ff"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kelvenapk&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00f5ff&text_color=c9d1d9"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=kelvenapk&show_icons=true&theme=react&hide_border=true&bg_color=0D1117&title_color=00f5ff&text_color=c9d1d9&icon_color=ff00ff" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kelvenapk&layout=compact&theme=react&hide_border=true&bg_color=0D1117&title_color=00f5ff&text_color=c9d1d9" />
+</p>
+
+<!-- Streak -->
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=kelvenapk&theme=react&hide_border=true&background=0D1117&ring=00f5ff&fire=ff00ff&currStreakNum=00f5ff&sideNums=ff00ff" />
 </p>
 
 <!-- Footer -->
