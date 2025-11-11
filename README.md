@@ -1,17 +1,6 @@
-<!-- Animated SVG Header -->
+<!-- Header limpo -->
 <p align="center">
-  <svg width="100%" height="120" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .fade { animation: fadeIn 2s ease-in-out infinite alternate; }
-      @keyframes fadeIn { from { opacity: 0.6; } to { opacity: 1; } }
-    </style>
-    <text x="50%" y="50%" font-size="28" fill="#e0e0e0" text-anchor="middle" dominant-baseline="middle" class="fade">
-      kelvenapk
-    </text>
-    <text x="50%" y="70%" font-size="12" fill="#8b949e" text-anchor="middle" class="fade">
-      full-stack developer
-    </text>
-  </svg>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=120&section=header&text=kelvenapk&fontSize=28&fontColor=e0e0e0&animation=fadeIn" />
 </p>
 
 <!-- Divisor clean -->
@@ -20,7 +9,7 @@
 <!-- Sobre -->
 <h3 align="center">Sobre</h3>
 <p align="center">
-  Desenvolvedor focado em JavaScript, React e Node.<br>
+  Desenvolvedor full-stack focado em JavaScript, React e Node.<br>
   Criando interfaces limpas e backends confiáveis.
 </p>
 
@@ -50,6 +39,11 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kelvenapk&show_icons=true&theme=transparent&bg_color=0D1117&title_color=e0e0e0&text_color=8b949e&icon_color=a855f7&hide_border=true" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=kelvenapk&layout=compact&theme=transparent&bg_color=0D1117&title_color=e0e0e0&text_color=8b949e&icon_color=a855f7&hide_border=true" />
+</p>
+
+<!-- Streak -->
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=kelvenapk&theme=transparent&hide_border=true&background=0D1117&ring=a855f7&fire=a855f7&currStreakNum=e0e0e0&sideNums=8b949e" />
 </p>
 
 <!-- Contato -->
