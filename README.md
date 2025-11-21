@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Profile Banner](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=9D4EDD&center=true&vCenter=true&width=800&lines=Dev+Fullstack+%7C+Open+Source+Enthusiast;TypeScript+%7C+React+%7C+Next.js+%7C+Node.js;Performance+%26+Privacy+Advocate;Sempre+aprendendo%2C+sempre+compartilhando+💜)
+![Profile Banner](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=9D4EDD&center=true&vCenter=true&width=800&lines=Dev+Fullstack+%7C+Open+Source+Enthusiast;TypeScript+%7C+React+%7C+Next.js+%7C+Node.js;Performance+%26+Privacy+Advocate;Windows+Optimization+Expert;Sempre+aprendendo%2C+sempre+compartilhando+💜)
 
 </div>
 
@@ -32,6 +32,7 @@
   <code><img src="https://cdn.simpleicons.org/nextdotjs/9333EA" height="20" alt="Next.js" /></code>
   <code><img src="https://cdn.simpleicons.org/nodedotjs/9333EA" height="20" alt="Node.js" /></code>
   <code><img src="https://cdn.simpleicons.org/react/9333EA" height="20" alt="React" /></code>
+  <code><img src="https://cdn.simpleicons.org/powershell/9333EA" height="20" alt="PowerShell" /></code>
   <code><img src="https://cdn.simpleicons.org/git/9333EA" height="20" alt="Git" /></code>
 </p>
 
@@ -40,6 +41,80 @@
   <img src="https://img.shields.io/github/followers/kelvenapk?label=Followers&style=flat-square&color=B026FF&logo=github" alt="GitHub Followers"/>
   <img src="https://img.shields.io/github/stars/kelvenapk?label=Stars&style=flat-square&color=9D4EDD&logo=github" alt="GitHub Stars"/>
 </p>
+
+---
+
+## 💻 Projetos em Destaque
+
+<div align="center">
+
+### 🚀 Meus Principais Projetos Open Source
+
+</div>
+
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+      <a href="https://github.com/kelvenapk/site-kelven-optimizer">
+        <img src="https://img.shields.io/badge/⚡-Kelven%20Optimizer-9D4EDD?style=for-the-badge&logoColor=white" alt="Kelven Optimizer Badge"/>
+      </a>
+      <br/><br/>
+      <p><b>⚡ 35+ Otimizações Reais para Windows 10/11</b></p>
+      <p>Suite completa de otimização do básico ao kernel. Maximize performance, reduza latência e elimine travamentos com interface futurista e profissional.</p>
+      <br/>
+      <p><strong>🎯 Principais Features:</strong></p>
+      <ul align="left">
+        <li>✅ Script tudo-em-um com backup automático</li>
+        <li>🎮 Otimizações para Gaming (Valorant, CS2)</li>
+        <li>💼 Workstation (Premiere, After Effects, Blender)</li>
+        <li>🔧 Tweaks avançados (MSI Mode, Timer Resolution)</li>
+        <li>🛡️ Seguro para anti-cheats</li>
+      </ul>
+      <br/>
+      <a href="https://github.com/kelvenapk/site-kelven-optimizer">
+        <img src="https://img.shields.io/github/stars/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Stars" alt="Stars"/>
+        <img src="https://img.shields.io/github/forks/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Forks" alt="Forks"/>
+        <img src="https://img.shields.io/github/issues/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Issues" alt="Issues"/>
+      </a>
+      <br/><br/>
+      🔗 <a href="https://github.com/kelvenapk/site-kelven-optimizer">→ Ver Projeto</a>
+    </td>
+    <td align="center" width="50%">
+      <a href="https://github.com/kelvenapk/kelvenos">
+        <img src="https://img.shields.io/badge/🖥️-KelvenOS-B026FF?style=for-the-badge&logoColor=white" alt="KelvenOS Badge"/>
+      </a>
+      <br/><br/>
+      <p><b>🖥️ Sistema Operacional Personalizado</b></p>
+      <p>Minha versão customizada e otimizada do Windows, focada em performance máxima e privacidade total.</p>
+      <br/>
+      <p><strong>🎯 Principais Features:</strong></p>
+      <ul align="left">
+        <li>🚀 Performance extrema out-of-the-box</li>
+        <li>🔒 Privacidade e telemetria zero</li>
+        <li>🎨 Interface limpa e minimalista</li>
+        <li>⚙️ Pré-configurado para desenvolvimento</li>
+        <li>📦 Bloatware removido</li>
+      </ul>
+      <br/>
+      <a href="https://github.com/kelvenapk/kelvenos">
+        <img src="https://img.shields.io/github/stars/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Stars" alt="Stars"/>
+        <img src="https://img.shields.io/github/forks/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Forks" alt="Forks"/>
+        <img src="https://img.shields.io/github/issues/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Issues" alt="Issues"/>
+      </a>
+      <br/><br/>
+      🔗 <a href="https://github.com/kelvenapk/kelvenos">→ Ver Projeto</a>
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+
+### 📌 Mais Projetos
+
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=site-kelven-optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF)](https://github.com/kelvenapk/site-kelven-optimizer)
+[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=kelvenos&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF)](https://github.com/kelvenapk/kelvenos)
+
+</div>
 
 ---
 
@@ -109,6 +184,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Batch](https://img.shields.io/badge/Batch-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
 ### 🎨 Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -123,18 +199,6 @@
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-
-</div>
-
----
-
-## 💻 Projetos em Destaque
-
-<div align="center">
-
-<a href="https://github.com/kelvenapk/kelvenos">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=kelvenos&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF" alt="KelvenOS Repository"/>
-</a>
 
 </div>
 
@@ -167,7 +231,7 @@ Estou sempre aberto para colaborar, aprender e crescer!
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kelvenapk&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&text_color=FFFFFF&border_radius=10&langs_count=6&hide=html,css" alt="Top Languages"/>
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kelvenapk&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&text_color=FFFFFF&border_radius=10&langs_count=8&hide=html,css" alt="Top Languages"/>
 <img width="49%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kelvenapk&theme=tokyonight&utcOffset=-3" alt="Productive Time"/>
 
 </div>
@@ -243,7 +307,7 @@ Estou sempre aberto para colaborar, aprender e crescer!
 
 ![Wave](https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg)
 
-**Made with 💜 by Kelven** | Dev Fullstack | Open Source Creator
+**Made with 💜 by Kelven** | Dev Fullstack | Open Source Creator | Windows Optimization Expert
 
 © 2025 - Code is Art ⚡
 
