@@ -14,7 +14,6 @@
 
 ---
 
-<!-- 🚀 SOBRE MIM – roxo minimalista -->
 <h2 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2000&pause=500&color=9333EA&center=true&vCenter=true&width=420&lines=Olá,+sou+Kelven+👋;Dev+Fullstack;Performance+%26+Open+Source">
@@ -48,71 +47,33 @@
 
 <div align="center">
 
-### 🚀 Meus Principais Projetos Open Source
+<a href="https://github.com/kelvenapk/site-kelven-optimizer">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=site-kelven-optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF" alt="Kelven Optimizer"/>
+</a>
+<a href="https://github.com/kelvenapk/kelvenos">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=kelvenos&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF" alt="KelvenOS"/>
+</a>
 
-</div>
+### ⚡ Kelven Optimizer
 
-<table align="center">
-  <tr>
-    <td align="center" width="50%">
-      <a href="https://github.com/kelvenapk/site-kelven-optimizer">
-        <img src="https://img.shields.io/badge/⚡-Kelven%20Optimizer-9D4EDD?style=for-the-badge&logoColor=white" alt="Kelven Optimizer Badge"/>
-      </a>
-      <br/><br/>
-      <p><b>⚡ 35+ Otimizações Reais para Windows 10/11</b></p>
-      <p>Suite completa de otimização do básico ao kernel. Maximize performance, reduza latência e elimine travamentos com interface futurista e profissional.</p>
-      <br/>
-      <p><strong>🎯 Principais Features:</strong></p>
-      <ul align="left">
-        <li>✅ Script tudo-em-um com backup automático</li>
-        <li>🎮 Otimizações para Gaming (Valorant, CS2)</li>
-        <li>💼 Workstation (Premiere, After Effects, Blender)</li>
-        <li>🔧 Tweaks avançados (MSI Mode, Timer Resolution)</li>
-        <li>🛡️ Seguro para anti-cheats</li>
-      </ul>
-      <br/>
-      <a href="https://github.com/kelvenapk/site-kelven-optimizer">
-        <img src="https://img.shields.io/github/stars/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Stars" alt="Stars"/>
-        <img src="https://img.shields.io/github/forks/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Forks" alt="Forks"/>
-        <img src="https://img.shields.io/github/issues/kelvenapk/site-kelven-optimizer?style=flat-square&color=9D4EDD&label=Issues" alt="Issues"/>
-      </a>
-      <br/><br/>
-      🔗 <a href="https://github.com/kelvenapk/site-kelven-optimizer">→ Ver Projeto</a>
-    </td>
-    <td align="center" width="50%">
-      <a href="https://github.com/kelvenapk/kelvenos">
-        <img src="https://img.shields.io/badge/🖥️-KelvenOS-B026FF?style=for-the-badge&logoColor=white" alt="KelvenOS Badge"/>
-      </a>
-      <br/><br/>
-      <p><b>🖥️ Sistema Operacional Personalizado</b></p>
-      <p>Minha versão customizada e otimizada do Windows, focada em performance máxima e privacidade total.</p>
-      <br/>
-      <p><strong>🎯 Principais Features:</strong></p>
-      <ul align="left">
-        <li>🚀 Performance extrema out-of-the-box</li>
-        <li>🔒 Privacidade e telemetria zero</li>
-        <li>🎨 Interface limpa e minimalista</li>
-        <li>⚙️ Pré-configurado para desenvolvimento</li>
-        <li>📦 Bloatware removido</li>
-      </ul>
-      <br/>
-      <a href="https://github.com/kelvenapk/kelvenos">
-        <img src="https://img.shields.io/github/stars/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Stars" alt="Stars"/>
-        <img src="https://img.shields.io/github/forks/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Forks" alt="Forks"/>
-        <img src="https://img.shields.io/github/issues/kelvenapk/kelvenos?style=flat-square&color=B026FF&label=Issues" alt="Issues"/>
-      </a>
-      <br/><br/>
-      🔗 <a href="https://github.com/kelvenapk/kelvenos">→ Ver Projeto</a>
-    </td>
-  </tr>
-</table>
+**35+ Otimizações Reais para Windows 10/11** - Do básico ao kernel  
+✅ Script tudo-em-um com backup automático  
+🎮 Otimizações para Gaming (Valorant, CS2)  
+💼 Workstation (Premiere, After Effects, Blender)  
+🔧 Tweaks avançados (MSI Mode, Timer Resolution, HPET)  
+🛡️ Seguro para anti-cheats
 
-<div align="center">
+[→ Ver Projeto](https://github.com/kelvenapk/site-kelven-optimizer)
 
-### 📌 Mais Projetos
+### 🖥️ KelvenOS
 
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=site-kelven-optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF)](https://github.com/kelvenapk/site-kelven-optimizer)
-[![Repo Card](https://github-readme-stats.vercel.app/api/pin/?username=kelvenapk&repo=kelvenos&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=9D4EDD&icon_color=B026FF&text_color=FFFFFF)](https://github.com/kelvenapk/kelvenos)
+**Sistema Operacional Personalizado** - Windows otimizado ao extremo  
+🚀 Performance máxima out-of-the-box  
+🔒 Privacidade e telemetria zero  
+🎨 Interface limpa e minimalista  
+⚙️ Pré-configurado para desenvolvimento
+
+[→ Ver Projeto](https://github.com/kelvenapk/kelvenos)
 
 </div>
 
@@ -130,18 +91,19 @@
   <tr>
     <td align="center" width="50%">
       <a href="https://github.com/Atlas-OS/Atlas">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFCZkAM5p5dNMZUMPhFgmJPuf_XV30ysXGo-2pbGt-6oW9Xe-HoneRmVcdaLtv6LLWO0&usqp=CAU" width="60" height="60" style="border-radius: 10px;" alt="Atlas OS Logo"/>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFCZkAM5p5dNMZUMPhFgmJPuf_XV30ysXGo-2pbGt-6oW9Xe-HoneRmVcdaLtv6LLWO0&usqp=CAU" width="60" height="60" alt="Atlas OS Logo"/>
       </a>
       <br/><br/>
       <a href="https://github.com/Atlas-OS/Atlas">
-        <img src="https://img.shields.io/badge/Atlas%20OS-🖥️%20Windows%20Optimization-0096FF?style=for-the-badge&logoColor=white" alt="Atlas OS Badge"/>
+        <img src="https://img.shields.io/badge/Atlas%20OS-🖥️%20Windows%20Optimization-0096FF?style=for-the-badge&logoColor=white" alt="Atlas OS"/>
       </a>
       <br/><br/>
-      <p><b>✨ Modificação leve e transparente do Windows</b></p>
-      <p>Otimiza performance extrema, máxima privacidade e usabilidade sem comprometer funcionalidades essenciais</p>
-      <br/>
-      <p><strong>💡 Por que contribuo:</strong> Código transparente que respeita o usuário, maximiza performance e coloca controle nas mãos de quem usa.</p>
-      <br/>
+      <b>✨ Modificação leve e transparente do Windows</b>
+      <br/><br/>
+      Otimiza performance extrema, máxima privacidade e usabilidade sem comprometer funcionalidades essenciais
+      <br/><br/>
+      <b>💡 Por que contribuo:</b> Código transparente que respeita o usuário, maximiza performance e coloca controle nas mãos de quem usa.
+      <br/><br/>
       <a href="https://github.com/Atlas-OS/Atlas">
         <img src="https://img.shields.io/github/stars/Atlas-OS/Atlas?style=flat-square&color=0096FF&label=Stars" alt="Stars"/>
         <img src="https://img.shields.io/github/forks/Atlas-OS/Atlas?style=flat-square&color=0096FF&label=Forks" alt="Forks"/>
@@ -151,18 +113,19 @@
     </td>
     <td align="center" width="50%">
       <a href="https://github.com/meetrevision/playbook">
-        <img src="https://revi.cc/logo.svg" width="60" height="60" style="border-radius: 10px;" alt="Revision Logo"/>
+        <img src="https://revi.cc/logo.svg" width="60" height="60" alt="Revision Logo"/>
       </a>
       <br/><br/>
       <a href="https://github.com/meetrevision/playbook">
-        <img src="https://img.shields.io/badge/Revision%20Playbook-⚙️%20Windows%20Automation-FF0040?style=for-the-badge&logoColor=white" alt="Revision Playbook Badge"/>
+        <img src="https://img.shields.io/badge/Revision%20Playbook-⚙️%20Windows%20Automation-FF0040?style=for-the-badge&logoColor=white" alt="Revision Playbook"/>
       </a>
       <br/><br/>
-      <p><b>✨ Ferramenta de automação e customização</b></p>
-      <p>Automação segura, auditável e transparente que coloca você no controle total</p>
-      <br/>
-      <p><strong>💡 Por que contribuo:</strong> Cada script é auditável, cada mudança é visível - é poesia em PowerShell.</p>
-      <br/>
+      <b>✨ Ferramenta de automação e customização</b>
+      <br/><br/>
+      Automação segura, auditável e transparente que coloca você no controle total
+      <br/><br/>
+      <b>💡 Por que contribuo:</b> Cada script é auditável, cada mudança é visível - é poesia em PowerShell.
+      <br/><br/>
       <a href="https://github.com/meetrevision/playbook">
         <img src="https://img.shields.io/github/stars/meetrevision/playbook?style=flat-square&color=FF0040&label=Stars" alt="Stars"/>
         <img src="https://img.shields.io/github/forks/meetrevision/playbook?style=flat-square&color=FF0040&label=Forks" alt="Forks"/>
@@ -184,7 +147,6 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
-![Batch](https://img.shields.io/badge/Batch-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=white)
 
 ### 🎨 Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
@@ -307,7 +269,7 @@ Estou sempre aberto para colaborar, aprender e crescer!
 
 ![Wave](https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg)
 
-**Made with 💜 by Kelven** | Dev Fullstack | Open Source Creator | Windows Optimization Expert
+**Made with 💜 by Kelven** | Dev Fullstack | Open Source Creator
 
 © 2025 - Code is Art ⚡
 
