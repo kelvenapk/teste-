@@ -1,4 +1,4 @@
-# <div align="center">👨‍💻 Kelven - Developer</div>
+# <div align="center"> Kelven - Developer</div>
 
 <div align="center">
 
@@ -81,3 +81,4 @@ Projeto de otimização web focado em performance e boas práticas.
 ![Profile Views](https://komarev.com/ghpvc/?username=kelvenapk&color=9D4EDD&style=flat-square&label=Profile+Views)
 
 </div>
+
