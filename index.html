@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metal Forte - Portões e Calhas</title>
+    <title>Metal Forte Serviços - Portões e Calhas Premium</title>
     <style>
         * {
             margin: 0;
@@ -11,292 +11,785 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+            --accent: #ff6b35;
+            --accent-hover: #ff8555;
+            --border: #2a2a2a;
+        }
+
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f5f5f5;
+            --bg-card: #ffffff;
+            --text-primary: #0a0a0a;
+            --text-secondary: #666666;
+            --accent: #ff6b35;
+            --accent-hover: #ff8555;
+            --border: #e0e0e0;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
             line-height: 1.6;
-            color: #333;
+            overflow-x: hidden;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
-        header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 2rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        /* Navegação */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+            transition: all 0.3s ease;
         }
 
-        .container {
+        [data-theme="light"] nav {
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        nav.scrolled {
+            padding: 1rem 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .header-content {
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        nav {
-            background: #34495e;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: white;
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
             text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        nav a:hover {
-            color: #e67e22;
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
         }
 
-        section {
-            padding: 4rem 0;
-        }
-
-        section:nth-child(even) {
-            background: #f8f9fa;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-            text-align: center;
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
             position: relative;
         }
 
-        h2::after {
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a::after {
             content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: #e67e22;
-            margin: 0.5rem auto;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
         }
 
-        .servicos-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+        .nav-links a:hover::after {
+            width: 100%;
         }
 
-        .servico-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+        .theme-toggle-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
         }
 
-        .servico-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        .theme-toggle-btn:hover {
+            transform: scale(1.1);
+            border-color: var(--accent);
         }
 
-        .servico-card h3 {
-            color: #2c3e50;
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6rem 2rem 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255, 107, 53, 0.05) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            line-height: 1.1;
+            animation: fadeInUp 0.8s ease-out;
         }
 
-        .sobre-content {
-            max-width: 800px;
-            margin: 0 auto;
+        .hero h2 {
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 400;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 0.8s ease-out 0.4s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stats */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 3rem;
+            max-width: 900px;
+            margin: 4rem auto;
+            animation: fadeInUp 0.8s ease-out 0.6s backwards;
+        }
+
+        .stat {
             text-align: center;
         }
 
-        .sobre-content p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            color: #555;
-        }
-
-        .contato-info {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contato-item {
-            padding: 1rem;
-            margin: 1rem 0;
-            border-left: 4px solid #e67e22;
-            background: #f8f9fa;
-        }
-
-        .contato-item strong {
-            color: #2c3e50;
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--accent);
             display: block;
             margin-bottom: 0.5rem;
         }
 
-        footer {
-            background: #2c3e50;
-            color: white;
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Avatar Section */
+        .avatar-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 4rem;
+            animation: fadeInUp 0.8s ease-out 0.8s backwards;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+            box-shadow: 0 0 30px rgba(255, 107, 53, 0.3);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .avatar-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .avatar-info p {
+            color: var(--text-secondary);
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
             text-align: center;
-            padding: 2rem 0;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 1rem auto 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.2);
+            border-color: var(--accent);
+        }
+
+        .project-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .features li {
+            color: var(--text-secondary);
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--bg-secondary);
+            padding: 6rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
             margin-top: 3rem;
         }
 
-        .cta-button {
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-content p {
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        .footer-location {
             display: inline-block;
-            background: #e67e22;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
             margin-top: 1rem;
-            transition: background 0.3s;
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border-radius: 50px;
+            border: 1px solid var(--border);
         }
 
-        .cta-button:hover {
-            background: #d35400;
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            nav ul {
+            .nav-links {
                 gap: 1rem;
             }
 
-            .servicos-grid {
-                grid-template-columns: 1fr;
+            .avatar-section {
+                flex-direction: column;
+                text-align: center;
             }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div>
-                    <h1>🔧 METAL FORTE</h1>
-                    <p class="subtitle">Qualidade e resistência em cada projeto</p>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+<body data-theme="dark">
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>⚒️</span>
+                <span>Metal Forte Service</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><button class="theme-toggle-btn" onclick="toggleTheme()">🌙</button></li>
             </ul>
         </div>
     </nav>
 
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre a Metal Forte</h2>
-            <div class="sobre-content">
-                <p>A Metal Forte é uma empresa especializada em soluções metálicas de alta qualidade, comandada por Uadson, profissional com anos de experiência no mercado.</p>
-                <p>Nossa missão é transformar metal em segurança e funcionalidade, oferecendo portões robustos e calhas eficientes que protegem seu patrimônio.</p>
-                <p>Trabalhamos com dedicação, pontualidade e o compromisso de entregar produtos que superem as expectativas dos nossos clientes.</p>
-            </div>
-        </div>
-    </section>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Soluções Premium em Metal</h1>
+            <h2>Portões e Calhas de Alta Performance</h2>
+            <p class="hero-description">
+                Especialista em transformar espaços através de portões personalizados, 
+                calhas eficientes e soluções metálicas de elite para máxima durabilidade e estética.
+            </p>
 
-    <section id="servicos">
-        <div class="container">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <h3>🚪 Portões Residenciais</h3>
-                    <p>Portões sob medida para sua residência, combinando segurança, durabilidade e design. Modelos de correr, basculantes e pivotantes.</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Personalizado</span>
                 </div>
-                <div class="servico-card">
-                    <h3>🏭 Portões Industriais</h3>
-                    <p>Soluções robustas para empresas e indústrias. Portões de alta resistência preparados para tráfego intenso e uso pesado.</p>
+                <div class="stat">
+                    <span class="stat-number">+500</span>
+                    <span class="stat-label">Projetos</span>
                 </div>
-                <div class="servico-card">
-                    <h3>🌧️ Calhas e Rufos</h3>
-                    <p>Instalação de calhas e rufos para proteção eficiente contra águas pluviais. Diversos modelos e acabamentos disponíveis.</p>
+                <div class="stat">
+                    <span class="stat-number">14+</span>
+                    <span class="stat-label">Anos</span>
                 </div>
-                <div class="servico-card">
-                    <h3>🔧 Manutenção</h3>
-                    <p>Serviço completo de manutenção preventiva e corretiva em portões e sistemas de escoamento de água.</p>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Atendimento</span>
                 </div>
-                <div class="servico-card">
-                    <h3>⚙️ Automação</h3>
-                    <p>Automação de portões com equipamentos de primeira linha. Mais comodidade e segurança para o seu dia a dia.</p>
-                </div>
-                <div class="servico-card">
-                    <h3>🎨 Projetos Personalizados</h3>
-                    <p>Desenvolvemos projetos exclusivos de acordo com sua necessidade. Do planejamento à execução com acabamento impecável.</p>
+            </div>
+
+            <div class="avatar-section">
+                <img src="https://ui-avatars.com/api/?name=Uadson&size=200&background=ff6b35&color=fff&bold=true" alt="Uadson" class="avatar">
+                <div class="avatar-info">
+                    <h3>Uadson - Proprietário</h3>
+                    <p>Especialista em metalurgia avançada</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <div class="contato-info">
-                <div class="contato-item">
-                    <strong>👤 Proprietário</strong>
-                    Uadson - Metal Forte
-                </div>
-                <div class="contato-item">
-                    <strong>📞 Telefone</strong>
-                    (XX) XXXXX-XXXX
-                </div>
-                <div class="contato-item">
-                    <strong>📧 E-mail</strong>
-                    contato@metalforte.com.br
-                </div>
-                <div class="contato-item">
-                    <strong>📍 Localização</strong>
-                    Araçuaí - MG
-                </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="#" class="cta-button">Solicite um Orçamento</a>
-                </div>
+    <section class="projects" id="projects">
+        <h2 class="section-title fade-in">Serviços em Destaque</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <span class="project-icon">🚪</span>
+                <h3>Portões Premium</h3>
+                <p>Portões personalizados de alta qualidade. Design exclusivo, materiais premium e acabamento impecável.</p>
+                <ul class="features">
+                    <li>Design sob medida personalizado</li>
+                    <li>Materiais de primeira linha</li>
+                    <li>Acabamento profissional</li>
+                    <li>Garantia estendida inclusa</li>
+                </ul>
+            </div>
+
+            <div class="project-card fade-in">
+                <span class="project-icon">🏭</span>
+                <h3>Soluções Industriais</h3>
+                <p>Portões robustos para indústrias. Estruturas reforçadas para alto tráfego e uso intensivo diário.</p>
+                <ul class="features">
+                    <li>Estruturas de alta resistência</li>
+                    <li>Preparado para tráfego pesado</li>
+                    <li>Sistemas automatizados modernos</li>
+                    <li>Manutenção preventiva inclusa</li>
+                </ul>
+            </div>
+
+            <div class="project-card fade-in">
+                <span class="project-icon">🌧️</span>
+                <h3>Calhas Premium</h3>
+                <p>Calhas em chapas pré-pintadas de alta qualidade. Disponível em branco, preto, amadeirado, cerâmica e galvalume.</p>
+                <ul class="features">
+                    <li>Chapas pré-pintadas premium</li>
+                    <li>Cores: Branco, Preto, Amadeirado</li>
+                    <li>Opções em Cerâmica e Galvalume</li>
+                    <li>Acabamento impecável garantido</li>
+                </ul>
+            </div>
+
+            <div class="project-card fade-in">
+                <span class="project-icon">🚪</span>
+                <h3>Portas de Enrolar</h3>
+                <p>Portas de enrolar em lâminas galvanizadas com pintura eletrostática nas cores desejadas pelo cliente.</p>
+                <ul class="features">
+                    <li>Lâminas galvanizadas resistentes</li>
+                    <li>Pintura eletrostática durável</li>
+                    <li>Cores personalizadas disponíveis</li>
+                    <li>Sistema de segurança incluso</li>
+                </ul>
+            </div>
+
+            <div class="project-card fade-in">
+                <span class="project-icon">🎨</span>
+                <h3>Acabamentos Inovadores</h3>
+                <p>Embaixadores em inovações e acabamentos. Técnicas modernas de funilaria com resultados superiores.</p>
+                <ul class="features">
+                    <li>Técnicas de funilaria avançadas</li>
+                    <li>Acabamentos de alta qualidade</li>
+                    <li>Inovação em cada projeto</li>
+                    <li>Padrão de excelência garantido</li>
+                </ul>
+            </div>
+
+            <div class="project-card fade-in">
+                <span class="project-icon">🏭</span>
+                <h3>Soluções Industriais</h3>
+                <p>Atendimento especializado para empresas e indústrias. Projetos de grande porte com prazos garantidos.</p>
+                <ul class="features">
+                    <li>Atendimento para toda região</li>
+                    <li>Prazos rigorosamente cumpridos</li>
+                    <li>Projetos industriais completos</li>
+                    <li>Suporte técnico especializado</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content fade-in">
+            <h2>Melhor Prazo e Atendimento da Região</h2>
+            <p>Especialistas em funilaria, calhas e portas de enrolar. Materiais premium e acabamentos inovadores para seu projeto.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5533999571994" class="btn btn-primary" target="_blank">
+                    💬 Falar no WhatsApp
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    📋 Ver Todos Serviços
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title fade-in">Entre em Contato</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-card fade-in">
+                <span class="contact-icon">👤</span>
+                <h3>Proprietário</h3>
+                <p>Uadson<br>Metal Forte Service</p>
+            </div>
+
+            <div class="contact-card fade-in">
+                <span class="contact-icon">📱</span>
+                <h3>WhatsApp</h3>
+                <p>(33) 99957-1994<br>Atendimento rápido</p>
+            </div>
+
+            <div class="contact-card fade-in">
+                <span class="contact-icon">📧</span>
+                <h3>E-mail</h3>
+                <p>contato@metalforte.com<br>orcamento@metalforte.com</p>
+            </div>
+
+            <div class="contact-card fade-in">
+                <span class="contact-icon">📍</span>
+                <h3>Localização</h3>
+                <p>Araçuaí - MG<br>Atendemos toda região</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Metal Forte - Todos os direitos reservados</p>
-            <p>Desenvolvido com qualidade e resistência</p>
+        <div class="footer-content">
+            <h3>Metal Forte Serviços</h3>
+            <p>Especialista em soluções metálicas premium. Projetos personalizados focados em qualidade, durabilidade e design.</p>
+            <div class="footer-location">📍 Minas Gerais, Brasil</div>
+            <p style="margin-top: 2rem; opacity: 0.7;">© 2025 Metal Forte Serviços. Todos os projetos são 100% personalizados.<br>Feito com ❤️ para transformar seus espaços.</p>
         </div>
     </footer>
+
+    <script>
+        // Toggle Theme
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.querySelector('.theme-toggle-btn');
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            btn.textContent = newTheme === 'dark' ? '🌙' : '☀️';
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.querySelector('.theme-toggle-btn').textContent = savedTheme === 'dark' ? '🌙' : '☀️';
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
