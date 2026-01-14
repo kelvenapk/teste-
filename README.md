@@ -4,9 +4,6 @@
 
 ![Profile Banner](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=1000&color=9D4EDD&center=true&vCenter=true&width=800&lines=Dev+Fullstack+%7C+Open+Source+Enthusiast;TypeScript+%7C+React+%7C+Next.js+%7C+Node.js;Performance+%26+Privacy+Advocate;Sempre+aprendendo%2C+sempre+compartilhando+%F0%9F%92%9C)
 
-</div>
-
-<h1 align="center">ola👋meu nome e kelven</h1>
 
 ###
 
@@ -88,3 +85,4 @@
 </div>
 
 ###
+
